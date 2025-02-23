@@ -2,44 +2,90 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    border: 0px;
-    width: 100%;
+    width: 90%;
+    justify-self: center;
 }
 
-nav {
+header {
     width: 100%;
-    outline: 2px gray solid;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index:1000;
+    padding: 3px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    padding-right: 30px;
+}
+
+footer p {
+    text-align: right;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0.5rem;
-    background-color:white;
+    background-color:black;
     margin: 0;
+    outline: 2px white solid;
+
 }
 
-nav ul li.title {
+header ul li.title {
     color: black;
     text-align: left;
 }
 
-nav ul li {
+header ul li {
     display: inline-block;
     margin-inline: 0.5rem;
 }
-
-nav ul li a {
-    color: black;
+h1 {
+    color: white;
+    padding:20px;
+}
+header ul li a {
+    color: white;
     text-decoration: none;
     padding: 0.5rem;
 }
 
-nav ul li a:hover, nav ul li a:focus {
+header ul li a:hover, nav ul li a:focus {
     outline: solid 2px gray;
 
+}
+
+main {
+    margin-bottom: 140px;
+
+
+}
+article {
+    padding-top: 120px;
+    margin-bottom: -80px;
+
+}
+
+h2 {
+    padding: 30px;
+    text-align: center;
+}
+p {
+    color: white;
+    line-height: 180%;
 }
