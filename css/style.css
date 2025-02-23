@@ -21,7 +21,7 @@ header {
     left: 0;
     z-index:1000;
     padding: 3px;
-    background-color:rgb(237, 237, 237);
+    background-color:rgba(237, 237, 237, 0.8);
 
 }
 
@@ -32,7 +32,7 @@ header {
     position: fixed;
     left: 0;
     padding-right: 30px;
-    background-color:rgb(237, 237, 237);
+    background-color: rgba(237, 237, 237, 0.8);
 }
 
 footer p {
@@ -83,8 +83,9 @@ article {
 
 h2 {
     padding: 30px;
+    font-size: 2rem;
     text-align: center;
 }
 p {
-    line-height: 180%;
+    line-height: 300%;
 }
