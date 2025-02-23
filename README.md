@@ -22,10 +22,22 @@ We built our churn prediction system by following these key steps:
 
 
 ## Challenges we ran into
+- Performance Optimization and Time Complexity: As our application loads large datasets and computes predictions on the fly, optimizing performance to provide a smooth user experience and time complexity of running machine learning models were key concerns.
+- Deployment Complexity: Integrating our machine learning models into a Streamlit web application required careful packaging of our code and ensuring that all dependencies were correctly installed on the deployment server.
+- User Interface Design: Creating a clear, intuitive, and responsive UI in Vercel involved significant effort in formatting the layout, aligning components, and choosing the right visualizations to communicate insights effectively.
+
 
 ## Accomplishments that we're proud of
+- Interactive Churn Prediction App:
+  We developed an intuitive Streamlit app that allows users to interact with our churn prediction model in real time. Through the app, users can input customer details and instantly see the model’s churn probability, enabling dynamic exploration of “what-if” scenarios. This interactive tool transforms complex analytics into an accessible, user-friendly experience.
+- Comprehensive Project Website:
+Our dedicated project website not only showcases our predictive models and their performance but also presents key insights and visualizations. The website is designed to clearly communicate our methodology, findings, and recommendations, making the information digestible for both technical and non-technical audiences.
+- Practical Application of Statistics & Data Science:
+We leveraged advanced statistical techniques and data science methodologies—from data cleaning and feature engineering to model building and interpretation—to build a robust churn prediction system. Our efforts in model evaluation using metrics like accuracy and ROC AUC, combined with detailed insights from SHAP, demonstrate how theoretical knowledge can be practically applied to drive actionable business insights.
+
 
 ## What we learned
+
 
 ## What's next for +____+ name
 In the future, we aim to scale our model by leveraging cloud data storage and other deployment tools such as Heroku. We also want to implement batch or real-time processing to make sure our model is continuously trained on the latest data and remains up-to-date.
