@@ -29,7 +29,7 @@ We built our churn prediction system by following these key steps:
 
 ## Accomplishments that we're proud of
 - **Interactive Churn Prediction App**:
-  We developed an intuitive Streamlit app that allows users to interact with our churn prediction model in real time. Through the app, users can input customer details and instantly see the model’s churn probability, enabling dynamic exploration of “what-if” scenarios. This interactive tool transforms complex analytics into an accessible, user-friendly experience.
+We developed an intuitive Streamlit app that allows users to interact with our churn prediction model in real time. Through the app, users can input customer details and instantly see the model’s churn probability, enabling dynamic exploration of “what-if” scenarios. This interactive tool transforms complex analytics into an accessible, user-friendly experience.
 - **Comprehensive Project Website**:
 Our dedicated project website not only showcases our predictive models and their performance but also presents key insights and visualizations. The website is designed to clearly communicate our methodology, findings, and recommendations, making the information digestible for both technical and non-technical audiences.
 - **Practical Application of Statistics & Data Science**:
@@ -37,6 +37,7 @@ We leveraged advanced statistical techniques and data science methodologies—fr
 
 
 ## What we learned
+We gained practical expertise in building and deploying a fully functional website using HTML, CSS, and JavaScript. We also enhanced our skills in applying machine learning algorithms in Python, leveraging our prior experience. Additionally, we learned the importance of effective delegation in achieving our project goals.
 
 
 ## What's next for +____+ name
