@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
 # Load Model
-model = joblib.load('model data/final_rf_model.pkl')
+model = joblib.load('final_rf_model.pkl')
 
 # Title
 st.title("Bank Customer Churn Prediction Dashboard")
