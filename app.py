@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
 # Load Model
-model = joblib.load('final_rf_model.pkl')
+model = joblib.load('model data/final_rf_model.pkl')
 
 # Title
 st.title("Bank Customer Churn Prediction Dashboard")
@@ -15,8 +15,10 @@ st.write("Use our interactive dashboard to predict whether a customer will leave
 # Sidebar Inputs
 st.sidebar.header("Enter Customer Details")
 credit_score = st.sidebar.slider("Credit Score", 300, 850, 600)
-balance = st.sidebar.slider("Account Balance ($)", 0, 200000, 50000)
-salary = st.sidebar.slider("Estimated Salary ($)", 0, 1000000, 50000)
+balance = st.sidebar.slider("Account Balance ($)", "0", "200,000", "50,000")
+balance = int(balance)
+salary = st.sidebar.slider("Estimated Salary ($)", "0", "1,000,000", "50,000")
+salary = int(salary)
 tenure = st.sidebar.slider("Tenure (Years)", 0, 10, 5)
 age = st.sidebar.slider("Age", 18, 100, 35)
 num_products = st.sidebar.slider("Number of Products", 1, 4, 2)
