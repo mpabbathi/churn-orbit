@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Churn Prediction Model</title>
+  <link rel="icon" href="/image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <!-- Include Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Include PapaParse for CSV Parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+
+</head>
+<body>
+  <!--Werid Stuff-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("article");
+            const navLinks = document.querySelectorAll("nav ul li a");
+    
+            function changeActiveSection() {
+                let currentSection = "";
+    
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop - 150; 
+                    const sectionBottom = sectionTop + section.offsetHeight;
+    
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+                        currentSection = section.getAttribute("id");
+                    }
+                });
+    
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href").includes(currentSection)) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+    
+            window.addEventListener("scroll", changeActiveSection);
+        });
+    </script>
+
+
+<body>
+    <div class="nav-links">
+      <!-- Navigation bar container -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#Home_landing" class="nav-link">Problem</a></li> <!-- Problem, Questions -->
+          <li><a href="#DataVisuals" class="nav-link">Data Visuals</a></li> <!-- Datasets visuals-->
+          <li><a href="Predicitive Results" class="nav-link">Predictive Results</a></li> <!-- Predictive modeling visuals-->
+          <li><a href="Solutions" class="nav-link">Solutions</a></li> <!-- Solutions -->
+        </ul>
+      </nav>
+    </div>
+
+    <!-- -->
+
+  <!-- Title Text -->
+  <h1 class="title">Bank Churn Prediction Model</h1>
+
+  <!-- ICON -->
+  <div class="image-container">
+    <img src="bank.png" alt="Description of image" class="landing-image">
+  </div>
+
+  <!-- Content sections under each link -->
+
+
+   <!-- Problem Section -->
+   <section class="problem-section">
+    <h2 class="problem-title">Problem</h2>
+    <div class="problem-description">
+      <p> Banks operate millions of customers, each with different circumstances that can lead them to close their accounts and send them towards competitors. Problem
+        -
+        “Customer retention is a key challenge for companies across all industries.”
+        -Somebody
+        Understanding why customers leave and what keeps them engaged is essential for long-term success.
+        
+        In the banking industry, churn is a persistent issue. Customers frequently close their accounts and switch to competitors. This turnover can lead to significant revenue loss for banks.
+        To tackle this problem, we analyzed a bank churn dataset. We leveraged machine learning to uncover the most telling predictors of customer retention. Our model provides data-driven insights to help banks proactively address churn and improve customer loyalty.
+        Our approach helps banks: Identify at-risk customers. Implement retention strategies based on insights.
+        </p>
+    </div>
+  </section>
+
+     <!-- Data visuals Section -->
+
+  <section class="datavisual-section">
+    <h2 class="datavisual-title">Data Visuals</h2>
+    <div class="datavisual-description">
+      <p> Banks operate millions of customers, each with different circumstances that can lead them to close their accounts and send them towards competitors. Problem
+        -
+        “Customer retention is a key challenge for companies across all industries.”
+        -Somebody
+        Understanding why customers leave and what keeps them engaged is essential for long-term success.
+        
+        In the banking industry, churn is a persistent issue. Customers frequently close their accounts and switch to competitors. This turnover can lead to significant revenue loss for banks.
+        To tackle this problem, we analyzed a bank churn dataset. We leveraged machine learning to uncover the most telling predictors of customer retention. Our model provides data-driven insights to help banks proactively address churn and improve customer loyalty.
+        Our approach helps banks: Identify at-risk customers. Implement retention strategies based on insights.
+        </p>
+    </div>
+  </section>
+
+</body>
+
+
+  <section class="Process-section">
+    <h2 class="Process-title">Process</h2>
+    <div class="Process-description">
+      <p> Banks operate millions of customers, each with different circumstances that can lead them to close their accounts and send them towards competitors. Problem
+        -
+        “Customer retention is a key challenge for companies across all industries.”
+        -Somebody
+        Understanding why customers leave and what keeps them engaged is essential for long-term success.
+        
+        In the banking industry, churn is a persistent issue. Customers frequently close their accounts and switch to competitors. This turnover can lead to significant revenue loss for banks.
+        To tackle this problem, we analyzed a bank churn dataset. We leveraged machine learning to uncover the most telling predictors of customer retention. Our model provides data-driven insights to help banks proactively address churn and improve customer loyalty.
+        Our approach helps banks: Identify at-risk customers. Implement retention strategies based on insights.
+        </p>
+    </div>
+  </section>
+
+       <!-- Predictive modeling Results visuals-->
+  <section class="Predictive-section">
+        <h2 class="Predictive-title">Predictive</h2>
+        <div class="Predictive-description">
+          <p> Banks operate millions of customers, each with different circumstances that can lead them to close their accounts and send them towards competitors. Problem
+            -
+            “Customer retention is a key challenge for companies across all industries.”
+            -Somebody
+            Understanding why customers leave and what keeps them engaged is essential for long-term success.
+            
+            In the banking industry, churn is a persistent issue. Customers frequently close their accounts and switch to competitors. This turnover can lead to significant revenue loss for banks.
+            To tackle this problem, we analyzed a bank churn dataset. We leveraged machine learning to uncover the most telling predictors of customer retention. Our model provides data-driven insights to help banks proactively address churn and improve customer loyalty.
+            Our approach helps banks: Identify at-risk customers. Implement retention strategies based on insights.
+            </p>
+        </div>
+  </section>
+       <!-- Solutions Section -->
+  <section class="Solutions-section">
+        <h2 class="Solutions-title">Solutions</h2>
+        <div class="Solutions-description">
+          <p> Banks operate millions of customers, each with different circumstances that can lead them to close their accounts and send them towards competitors. Problem
+            -
+            “Customer retention is a key challenge for companies across all industries.”
+            -Somebody
+            Understanding why customers leave and what keeps them engaged is essential for long-term success.
+            
+            In the banking industry, churn is a persistent issue. Customers frequently close their accounts and switch to competitors. This turnover can lead to significant revenue loss for banks.
+            To tackle this problem, we analyzed a bank churn dataset. We leveraged machine learning to uncover the most telling predictors of customer retention. Our model provides data-driven insights to help banks proactively address churn and improve customer loyalty.
+            Our approach helps banks: Identify at-risk customers. Implement retention strategies based on insights.
+            </p>
+        </div>
+    </section>
+
+       <!-- About Team Section -->
+
+<section id="about-team">
+  <h2>About the Team</h2>
+  <div class="team-members">
+    <div class="team-member">
+      <img src="bank.png" alt="Team Member 1">
+      <h3>John Doe</h3>
+      <p>Stats Major</p>
+    </div>
+    <div class="team-member">
+      <img src="bank.png" alt="Team Member 2">
+      <h3>Jane Smith</h3>
+      <p>3rd Year</p>
+    </div>
+    <div class="team-member">
+      <img src="bank.png" alt="Team Member 3">
+      <h3>Alex Johnson</h3>
+      <p>Data Scientist</p>
+    </div>
+    <div class="team-member">
+      <img src="bank.png" alt="Team Member 4">
+      <h3>Emily Davis</h3>
+      <p>Designer</p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <p> Check Out Our <a href="https://github.com/mpabbathi/dataorbit-25-group-20" target="_blank" rel="noopener noreferrer">Github</a> and 
+  <a href="https://devpost.com/" target="_blank" rel="noopener noreferrer">Devpost</a> </p>
+</footer>
