@@ -40,7 +40,7 @@ We leveraged advanced statistical techniques and data science methodologies—fr
 We gained practical expertise in building and deploying a fully functional website using HTML, CSS, and JavaScript. We also enhanced our skills in applying machine learning algorithms in Python, leveraging our prior experience. Additionally, we learned the importance of effective delegation in achieving our project goals.
 
 
-## What's next for +____+ name
+## What's next for ChurnOrbit
 In the future, we aim to scale our model by leveraging cloud data storage and other deployment tools such as Heroku. We also want to implement batch or real-time processing to make sure our model is continuously trained on the latest data and remains up-to-date.
 
 We also would like to expand beyond the banking sector. Customer retention is crucial for all industries, and we hope to broaden the scope of our model to serve a wider range of use cases.
