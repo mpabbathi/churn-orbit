@@ -15,10 +15,8 @@ st.write("Use our interactive dashboard to predict whether a customer will leave
 # Sidebar Inputs
 st.sidebar.header("Enter Customer Details")
 credit_score = st.sidebar.slider("Credit Score", 300, 850, 600)
-balance = st.sidebar.slider("Account Balance ($)", "0", "200,000", "50,000")
-balance = int(balance)
-salary = st.sidebar.slider("Estimated Salary ($)", "0", "1,000,000", "50,000")
-salary = int(salary)
+balance = st.sidebar.slider("Account Balance ($)", 0, 200000, 50000)
+salary = st.sidebar.slider("Estimated Salary ($)", 0, 1000000, 50000)
 tenure = st.sidebar.slider("Tenure (Years)", 0, 10, 5)
 age = st.sidebar.slider("Age", 18, 100, 35)
 num_products = st.sidebar.slider("Number of Products", 1, 4, 2)
