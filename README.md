@@ -22,3 +22,6 @@ that drive customer retention strategies.
 ## What we learned
 
 ## What's next for +____+ name
+In the future, we aim to scale our model by leveraging cloud data storage and other deployment tools such as Heroku. We also want to implement batch or real-time processing to make sure our model is continuously trained on the latest data and remains up-to-date.
+
+We also would like to expand beyond the banking sector. Customer retention is crucial for all industries, and we hope to broaden the scope of our model to serve a wider range of use cases.
