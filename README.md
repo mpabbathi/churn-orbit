@@ -13,6 +13,12 @@ demographics (credit score, estimated salary, and more) we are able to provide i
 that drive customer retention strategies. 
 
 ## How we built it
+We built our churn prediction system by following these key steps:
+	•	Data Preparation: We cleaned the customer dataset, selected relevant features, and split the data into training and testing sets.
+	•	Modeling Pipeline: Using Python and scikit-learn, we implemented several classification algorithms—Logistic Regression, K-Nearest Neighbors, Decision Trees, Random Forest, and Boosted Trees—to predict customer churn.
+	•	Model Evaluation: We evaluated the models using accuracy and ROC AUC metrics through cross-validation. Random Forest emerged as the top performer with 81.8% accuracy.
+	•	Feature Analysis: We examined variable importance and used SHAP (Shapley Additive Explanations) to understand the impact of key factors like Age, Estimated Salary, Credit Score, and Balance on churn.
+	•	Refinement & Insights: Finally, we refined our model by dropping insignificant variables and segmenting key features into bins, helping us identify high-risk customer groups and guide targeted retention strategies.
 
 
 ## Challenges we ran into
