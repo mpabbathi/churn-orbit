@@ -1,5 +1,5 @@
 ## Inspiration
-We are all future aspiring entrepeners who recognize the importance of customer 
+We are all future aspiring entrepreneurs who recognize the importance of customer 
 retention in any business, company, and service. As busnisses strive to create products
 and services that draws and keeps customers in, we also wanted to help busnisses
 identify characteristics of customers that are at risk of leaving. We ultimately decided
