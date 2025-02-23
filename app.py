@@ -7,10 +7,11 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
 # Load Model
-model = joblib.load('best_rf_model.pkl')
+model = joblib.load('final_rf_model.pkl')
 
 # Title
 st.title("Bank Customer Churn Prediction Dashboard")
+st.write("Use our interactive dashboard to predict whether a customer will leave your bank.")
 
 # Sidebar Inputs
 st.sidebar.header("Enter Customer Details")
@@ -24,17 +25,13 @@ gender = st.sidebar.selectbox(
     "Select Gender", 
     ["Female", "Male"]
 )
-geography = st.sidebar.selectbox(
-    "Select Country", 
-    ["Spain", "Germany", "France"]
+credit_card = st.sidebar.selectbox(
+    "Select Credit Card Status", 
+    ["Has Card", "Does Not Have Card"]
 )
 active_member = st.sidebar.selectbox(
     "Select Status", 
     ["Active", "Not Active"]
-)
-credit_card = st.sidebar.selectbox(
-    "Select Credit Card Status", 
-    ["Has Card", "Does Not Have Card"]
 )
 
 # Encode categorical inputs
@@ -49,7 +46,6 @@ customer_data = pd.DataFrame({
     'Tenure': [tenure],
     'Balance': [balance],
     'EstimatedSalary': [salary],
-    'Geography': [geography],
     'Gender': [gender],
     'HasCrCard': [credit_card],
     'IsActiveMember': [active_member],
@@ -62,4 +58,4 @@ if st.sidebar.button("Predict Churn"):
     st.subheader(f"Prediction: {'🚨 Likely to Churn' if churn_prediction else '✅ Will Stay'}")
     st.write(f"Churn Probability: {churn_prob:.2f}%")
 
-    # streamlit run app.py
+ # streamlit run app.py
