@@ -1,21 +1,13 @@
 ## Inspiration
-We are all future aspiring entrepreneurs who recognize the importance of customer 
-retention in any business, company, and service. As busnisses strive to create products
-and services that draws and keeps customers in, we also wanted to help busnisses
-identify characteristics of customers that are at risk of leaving. We ultimately decided
-on narrowing our scope to predicting bank churn. We hope that banks and other busninsses
-gain valuable insights from our findings.
+We are all future aspiring entrepreneurs who recognize the importance of customer retention in any business, company, and service. As businesses strive to create products and services that draw and keep customers in, we also wanted to help businesses identify characteristics of customers that are at risk of leaving. We ultimately decided on narrowing our scope to predicting bank churn. We hope that banks and other businesses gain valuable insights from our findings.
 
 ## What it does
-Our bank churn projection model leverages machine learning to predict customer churn, 
-helping banks identify at-risk customers before they leave.  By analyzing customer 
-demographics (credit score, estimated salary, and more) we are able to provide insights
-that drive customer retention strategies. 
+Our bank churn prediction model leverages machine learning to predict customer churn,  helping banks identify at-risk customers before they leave.  By analyzing customer demographics (credit score, estimated salary, and more) we are able to provide insights that drive customer retention strategies. 
 
 ## How we built it
 We built our churn prediction system by following these key steps:
 - Data Preparation: We cleaned the customer dataset, selected relevant features, and split the data into training and testing sets.
-- Modeling Pipeline: Using Python and scikit-learn, we implemented several classification algorithms—Logistic Regression, K-Nearest Neighbors, Decision Trees, Random Forest, and Boosted Trees—to predict customer churn.
+- Modeling Pipeline: Using Python and scikit-learn, we implemented several classification algorithms — Logistic Regression, K-Nearest Neighbors, Decision Trees, Random Forest, and Boosted Trees — to predict customer churn.
 - Model Evaluation: We evaluated the models using accuracy and ROC AUC metrics through cross-validation. Random Forest emerged as the top performer with 81.8% accuracy.
 - Feature Analysis: We examined variable importance and used SHAP (Shapley Additive Explanations) to understand the impact of key factors like Age, Estimated Salary, Credit Score, and Balance on churn.
 - Refinement & Insights: Finally, we refined our model by dropping insignificant variables and segmenting key features into bins, helping us identify high-risk customer groups and guide targeted retention strategies.
@@ -33,7 +25,7 @@ We developed an intuitive Streamlit app that allows users to interact with our c
 - **Comprehensive Project Website**:
 Our dedicated project website not only showcases our predictive models and their performance but also presents key insights and visualizations. The website is designed to clearly communicate our methodology, findings, and recommendations, making the information digestible for both technical and non-technical audiences.
 - **Practical Application of Statistics & Data Science**:
-We leveraged advanced statistical techniques and data science methodologies—from data cleaning and feature engineering to model building and interpretation—to build a robust churn prediction system. Our efforts in model evaluation using metrics like accuracy and ROC AUC, combined with detailed insights from SHAP, demonstrate how theoretical knowledge can be practically applied to drive actionable business insights.
+We leveraged advanced statistical techniques and data science methodologies — from data cleaning and feature engineering to model building and interpretation — to build a robust churn prediction system. Our efforts in model evaluation using metrics like accuracy and ROC AUC, combined with detailed insights from SHAP, demonstrate how theoretical knowledge can be practically applied to drive actionable business insights.
 
 
 ## What we learned
