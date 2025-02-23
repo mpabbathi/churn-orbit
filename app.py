@@ -61,3 +61,5 @@ if st.sidebar.button("Predict Churn"):
     churn_prob = model.predict_proba(customer_data)[0][1] * 100
     st.subheader(f"Prediction: {'🚨 Likely to Churn' if churn_prediction else '✅ Will Stay'}")
     st.write(f"Churn Probability: {churn_prob:.2f}%")
+
+    # streamlit run app.py
