@@ -28,11 +28,11 @@ We built our churn prediction system by following these key steps:
 
 
 ## Accomplishments that we're proud of
-- Interactive Churn Prediction App:
+- **Interactive Churn Prediction App**:
   We developed an intuitive Streamlit app that allows users to interact with our churn prediction model in real time. Through the app, users can input customer details and instantly see the model’s churn probability, enabling dynamic exploration of “what-if” scenarios. This interactive tool transforms complex analytics into an accessible, user-friendly experience.
-- Comprehensive Project Website:
+- **Comprehensive Project Website**:
 Our dedicated project website not only showcases our predictive models and their performance but also presents key insights and visualizations. The website is designed to clearly communicate our methodology, findings, and recommendations, making the information digestible for both technical and non-technical audiences.
-- Practical Application of Statistics & Data Science:
+- **Practical Application of Statistics & Data Science**:
 We leveraged advanced statistical techniques and data science methodologies—from data cleaning and feature engineering to model building and interpretation—to build a robust churn prediction system. Our efforts in model evaluation using metrics like accuracy and ROC AUC, combined with detailed insights from SHAP, demonstrate how theoretical knowledge can be practically applied to drive actionable business insights.
 
 
