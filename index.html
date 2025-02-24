@@ -1,178 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank Churn Prediction Model</title>
-    <link rel="icon" href="/image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const sections = document.querySelectorAll("article");
-            const navLinks = document.querySelectorAll("nav ul li a");
-    
-            function changeActiveSection() {
-                let currentSection = "";
-    
-                sections.forEach((section) => {
-                    const sectionTop = section.offsetTop - 150; 
-                    const sectionBottom = sectionTop + section.offsetHeight;
-    
-                    if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-                        currentSection = section.getAttribute("id");
-                    }
-                });
-    
-                navLinks.forEach((link) => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href").includes(currentSection)) {
-                        link.classList.add("active");
-                    }
-                });
-            }
-    
-            window.addEventListener("scroll", changeActiveSection);
-        });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Churn Prediction Model</title>
+  <link rel="icon" href="/image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
 </head>
-<body>
-    <header>
-        <h1>Bank Churn Prediction Model</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href = "#abstract">Abstract</a>
-                </li>
-                <li>
-                    <a href = "#results">Our Results</a>
-                </li>
-                <li>
-                    <a href = "#process">Our Process</a>
-                </li>
-                <li>
-                    <a href = "#team">Meet Our Team</a>
-                </li>
-                <li>
-                    <a href = "#DataVisuals">Data Visuals</a>
-                </li>
-                <li>
-                    <a href = "#">Back to Top </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+      <div>
+        <h1>Credit Score Distribution</h1>
+        <canvas id="creditScoreChart" width="500" height="300"></canvas> 
+        <p>Range of Credit Scores</p>
+      </div>
+    </div>
 
-    <main>
-        <article id = "abstract">
-            <h2>Abstract</h2>
-            <h3>Problem</h3>
-            - <br>
-            <blockquote>
-                <p>“Customer retention is a key challenge for companies across all industries.”</p>
-                
-                <footer>-Somebody</footer>
-            </blockquote>
-            Understanding why customers leave and what keeps them engaged is essential for long-term success. </p>
-            <image><!-- Icon: A magnifying glass over a group of people (representing analysis of customer behavior).
-                Image: A pie chart showing customer retention statistics.--></image>
-            <p>In the banking industry, churn is a persistent issue.
-            Customers frequently close their accounts and switch to competitors.
-            This turnover can lead to significant revenue loss for banks.</p> <!-- Icon: A bank with an arrow going away from it (representing customers leaving).
-            Image: A graphic showing a decline in customer numbers or revenue! -->
-            <p>
-                To tackle this problem, we analyzed a bank churn dataset.
-                We leveraged machine learning to uncover the most telling predictors of customer retention.
-                Our model provides data-driven insights to help banks proactively address churn and improve customer loyalty.
-            </p> <!-- Icon: A computer with data analysis graphics on the screen (representing machine learning).
-            Image: A flowchart showing the process from data analysis to actionable insights. -->     
-            <p>Our approach helps banks:
-                Identify at-risk customers.
-                Implement retention strategies based on insights.</p>
-                <!-- Icon: A target with arrows hitting it (representing successful strategies).
-Image: A thumbs-up or positive feedback graphic. -->
-        </article>
-        
-        <article id = "results">
-                <h2> Results </h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt deleniti, laudantium vel placeat natus alias impedit ab et excepturi quasi reiciendis accusantium voluptatum iusto illum, officiis, sequi delectus ipsum neque.
-                Quasi totam excepturi laudantium mollitia optio rerum ab! Error blanditiis eligendi quos deleniti. Possimus fugiat rem totam minus dolor similique nisi necessitatibus nihil suscipit atque. Fuga ea omnis dolor consectetur.
-                Quas necessitatibus sapiente culpa consequuntur placeat tempore illo debitis dolor ut nisi repudiandae, sint accusantium cupiditate ab iure ducimus quaerat doloribus repellendus aliquam temporibus accusamus corporis neque error! Non, placeat.
-                Tenetur eius et nisi eaque expedita reprehenderit deleniti consequatur, nobis iusto architecto necessitatibus laboriosam alias nulla amet corrupti illo minus id, perspiciatis dolorem doloremque minima! Alias aut mollitia obcaecati minima.
-                Sint vero laudantium commodi quidem quas nisi ipsa illo repudiandae sapiente atque. Dignissimos corporis quos necessitatibus commodi possimus aspernatur cupiditate optio molestias autem reiciendis. Debitis fugiat eligendi architecto itaque praesentium!
-                Incidunt voluptatibus atque corrupti doloribus aliquid ad iusto fugit adipisci voluptate molestiae similique sequi repellat asperiores culpa, magnam iste, quod quam voluptas a laudantium velit corporis! Distinctio minima velit corporis.
-                Harum ratione nihil officiis quidem placeat reprehenderit commodi quis velit sed voluptatum ullam dolorum, nobis assumenda illum illo tenetur rem non aperiam modi beatae dignissimos veniam! Adipisci ducimus facere maiores!
-                Et suscipit rem illo! Obcaecati voluptatibus ab illum ad! Recusandae a voluptatem accusantium tenetur sit alias magni adipisci molestiae enim reiciendis itaque laboriosam eum voluptas error nemo, ad, quas numquam?
-                Neque illum dolor velit, itaque officia eligendi cupiditate delectus ut repudiandae officiis saepe voluptates, cumque soluta ad provident beatae quam quos pariatur! Eius, alias inventore? Non in unde ducimus et?
-                Vel temporibus ea excepturi deleniti atque enim debitis suscipit distinctio cupiditate illum molestiae facilis eaque incidunt molestias corrupti, harum minima voluptate voluptates pariatur alias et. Amet libero unde consequuntur dignissimos?</p>
-        </article>
-        <article id = "process">
-            <h2> Process </h2>
-            <p>
-                we are all passionate about making businesses, and we took a long time to look though datasets. 
-                eda, then feed various models
-                using auc visualized metrics
-                then pick vew variables and finding numeric values that are most at risk.
-            </p>
-        </article>
-        
-              <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-            <div class="container">
-          <div>
-            <h1>Credit Score Distribution</h1>
-            <canvas id="creditScoreChart" width="500" height="300"></canvas> 
-            <p>Range of Credit Scores</p>
-          </div>
-        </div>
-    
-        <div class = "container">
-          <div>
-            <h1>Churned</h1>
-            <canvas id="activityStatusChart" width="500" height="300"></canvas> 
-            <p>Churned</p>
-         </div>
-        </div>
-    
-        <div class = "container">
-          <div>
-            <h1>Salary</h1>
-            <canvas id="estimatedSalaryChart" width="800" height="300"></canvas>
-            <p>Total Salary Count</p>
-          </div>
-         </div>
-        
-    
-        <div class="container">
-          <div>
-            <h1>Tenure</h1>
-            <canvas id="TenureChart" width="500" height="200"></canvas> 
-            <p>Tenure (Amount of Years As A Customer of Bank)</p> 
-          </div>
-        </div>    
-    
-    
-        <div class="container">
-          <div>
-            <h1>Balance</h1>
-            <canvas id="accountBalanceChart" width="500" height="200"></canvas> 
-            <p>Amount</p> 
-          </div>
-        </div>    
+    <div class = "container">
+      <div>
+        <h1>Churned</h1>
+        <canvas id="activityStatusChart" width="500" height="300"></canvas> 
+        <p>Churned</p>
+     </div>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"> </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script> 
-        <script src="script.js"></script>
-        <article>
-            
-        </article>
-        <article id = "team">
-            <h2>Meet Our Team</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem repellat soluta beatae ducimus, eligendi ex maxime eius optio quos, dolorum distinctio deleniti adipisci fuga veritatis eos illum delectus nisi sequi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem repellat soluta beatae ducimus, eligendi ex maxime eius optio quos, dolorum distinctio deleniti adipisci fuga veritatis eos illum delectus nisi sequi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem repellat soluta beatae ducimus, eligendi ex maxime eius optio quos, dolorum distinctio deleniti adipisci fuga veritatis eos illum delectus nisi sequi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem repellat soluta beatae ducimus, eligendi ex maxime eius optio quos, dolorum distinctio deleniti adipisci fuga veritatis eos illum delectus nisi sequi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem repellat soluta beatae ducimus, eligendi ex maxime eius optio quos, dolorum distinctio deleniti adipisci fuga veritatis eos illum delectus nisi sequi?</p>
-        </article>
-    </main>
-    <footer>
-        <p> Check Out Our <a href = "https://github.com/mpabbathi/dataorbit-25-group-20" target = "_blank" rel = "noopener noreferrer">Github</a> and 
-        <a href = "https://devpost.com/" target = "_blank" rel = "noopener noreferrer">Devpost</a> </p>
-    </footer>
-</body>
+    <div class = "container">
+      <div>
+        <h1>Salary</h1>
+        <canvas id="estimatedSalaryChart" width="800" height="300"></canvas>
+        <p>Total Salary Count</p>
+      </div>
+     </div>
+    
+
+    <div class="container">
+      <div>
+        <h1>Tenure</h1>
+        <canvas id="TenureChart" width="500" height="200"></canvas> 
+        <p>Tenure (Amount of Years As A Customer of Bank)</p> 
+      </div>
+    </div>    
+
+
+    <div class="container">
+      <div>
+        <h1>Balance</h1>
+        <canvas id="accountBalanceChart" width="500" height="200"></canvas> 
+        <p>Amount</p> 
+      </div>
+    </div>    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script> 
+    <script src="script.js"></script> 
 </html>
+
+

@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+    background-color: hsla(108, 23%, 79%, 0.98);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Style for the navbar */
+
+.navbar {
+    padding: 20px 20px 10px 20px; 
+    border-radius: 15px;  
+
+}
+  
+  .nav-links {
+    list-style-type: none; 
+    display: flex;  
+    justify-content: flex-end;
+    padding: 15px 20px;  
+    border-radius: 15px; 
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 40px; 
+  }
+  
+  .nav-links a {
+    color: rgb(0, 0, 0); 
+    font-size: 22px;
+    text-decoration: none;  
+    padding: 8px 16px; 
+  }
+  
+  .nav-links a:hover {
+    background-color: #c0e5b6;  
+    border-radius: 4px; 
+  }
+
+
+h1 {
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 36px;  
+    color: #333; 
+    margin-top: 20vh; 
+  }
+  
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-top: 50px;  
+  }
+  
+  .landing-image {
+    display: block;
+    margin: 20px auto;  
+    width: 80%;  
+    max-width: 400px; 
+  }
+
+
+
+.problem-section {
+    text-align: center;
+    padding-top: 150px; 
+  }
+  
+  .problem-title {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .problem-description {
+    display: inline-block; 
+    background-color: rgb(246, 248, 244);
+    padding: 50px;
+    border-radius: 50px; 
+    width: 80%;
+    margin-bottom: 50px;
+}
+  
+  .problem-description p {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000000;
+    border-radius: 25px; 
+    padding: 20px;
+
+  }
+
+
+  .datavisual-section {
+    text-align: center;
+    padding-top: 150px; /* Adds some space from the top */
+  }
+  
+  .datavisual-title {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds space below the title */
+  }
+  
+  .datavisual-description {
+    display: inline-block; /* Centers the description within the container */
+    background-color: rgb(246, 248, 244);
+    padding: 30px; /* Adds padding inside the box */
+    border-radius: 50px; /* Rounded corners */
+    width: 80%; /* Adjust the width as needed */
+    margin-bottom: 50px; /* Adds space below the title */
+}
+  
+  .datavisual-description p {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000000;
+    border-radius: 25px; 
+    padding: 20px;
+  }
+  
+
+  .Process-section {
+    text-align: center;
+    padding-top: 150px; /* Adds some space from the top */
+  }
+  
+  .Process-title {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds space below the title */
+  }
+  
+  .Process-description {
+    display: inline-block; /* Centers the description within the container */
+    background-color: rgb(246, 248, 244);
+    padding: 30px; /* Adds padding inside the box */
+    border-radius: 50px; /* Rounded corners */
+    width: 80%; /* Adjust the width as needed */
+    margin-bottom: 50px; /* Adds space below the title */
+}
+  
+  .Process-description p {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000000;
+    border-radius: 25px; 
+    padding: 20px;
+  }
+  
+
+  .Predictive-section {
+    text-align: center;
+    padding-top: 150px; /* Adds some space from the top */
+  }
+  
+  .Predictive-title {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds space below the title */
+  }
+  
+  .Predictive-description {
+    display: inline-block; /* Centers the description within the container */
+    background-color: rgb(246, 248, 244);
+    padding: 30px; 
+    border-radius: 50px; 
+    width: 80%; /* Adjust the width as needed */
+    margin-bottom: 50px; 
+}
+  
+  .Predictive-description p {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000000;
+    border-radius: 25px; 
+    padding: 20px;
+  }
+  
+
+
+  .Solutions-section {
+    text-align: center;
+    padding-top: 150px; /* Adds some space from the top */
+  }
+  
+  .Solutions-title {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds space below the title */
+  }
+  
+  .Solutions-description {
+    display: inline-block; 
+    background-color: rgb(246, 248, 244);
+    padding: 30px; 
+    border-radius: 50px; /* Rounded corners */
+    width: 80%; /* Adjust the width as needed */
+    margin-bottom: 50px; /* Adds space below the title */
+}
+  
+  .Solutions-description p {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000000;
+    border-radius: 25px; 
+    padding: 20px;
+  }
+  
+
+  /* About Team Section*/
+  #about-team {
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: #153a1d;
+
+  }
+  
+  #about-team h2 { /* About Team title */
+    padding-top: 100px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #000000; 
+    padding-bottom: 30px;
+  }
+  
+  .team-members {
+    background-color: #153a1d;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  
+  .team-member {
+    width: 200px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: 10%;
+
+  }
+  
+  .team-member img {
+    width: 100%;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333; 
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #666;  
+  }
+  
+
+footer p {
+    text-align: right;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: #153a1d;
+    line-height: 180%;
+    width: 100%;
+    color: #ffffff;
+    font-size: 20px;
+
+
+}
+
+
+
+      
+.container {
+  max-width: 80%;
+  margin: 70px auto;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 50px; 
+}
+
+
+h1 {
+  margin: 0px auto;
+  font-size: 2.5em;
+  color: rgb(28, 55, 28);
+  background-color: white;
+  text-transform: uppercase;
+  color: #124a33;
+
+}
+
+
+/* Styling for the canvas element */
+canvas {
+  background-color: white;
+}
+
+
+/* Paragraph styling for chart labels */
+p {
+  text-align: center;
+  font-size: 1.5em;
+  color: #555;
+  margin-top: 0px;
+  background-color: white;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
